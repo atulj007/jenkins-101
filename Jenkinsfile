@@ -10,10 +10,12 @@ pipeline {
                 sh '''
               }
         }
-        stage('Test') {
+         stage('Test') {
             steps {
                 echo "Testing.."
                 sh '''
+                echo "doing test stuff.."
+                '''
             }
         }
         stage('Deliver') {
