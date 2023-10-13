@@ -8,6 +8,8 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
+                echo "doing Build stuff.."
+                '''
               }
         }
          stage('Test') {
@@ -18,6 +20,7 @@ pipeline {
                 '''
             }
         }
+        
         stage('Deliver') {
             steps {
                 echo 'Deliver....'
@@ -28,3 +31,4 @@ pipeline {
         }
     }
 }
+
